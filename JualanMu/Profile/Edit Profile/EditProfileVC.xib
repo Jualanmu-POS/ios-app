@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileVC" customModule="Jualanmu" customModuleProvider="target">
+            <connections>
+                <outlet property="changeImgButton" destination="G8s-RZ-7fh" id="fxw-SU-pCv"/>
+                <outlet property="profileImage" destination="hth-MI-LHt" id="bLu-HA-oZa"/>
+                <outlet property="tableView" destination="5ck-64-XRm" id="ffP-si-A7V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-camera" translatesAutoresizingMaskIntoConstraints="NO" id="hth-MI-LHt">
+                    <rect key="frame" x="106" y="94" width="202" height="202"/>
+                    <color key="backgroundColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hth-MI-LHt" secondAttribute="height" multiplier="1:1" id="Ojx-Bq-Vok"/>
+                        <constraint firstAttribute="width" constant="202" id="tfH-kC-sP8"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8s-RZ-7fh">
+                    <rect key="frame" x="165" y="306" width="84" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Ubah Gambar"/>
+                    <connections>
+                        <action selector="changeImgButton:" destination="-1" eventType="touchUpInside" id="Jez-ZN-QJe"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="5ck-64-XRm">
+                    <rect key="frame" x="0.0" y="334" width="414" height="528"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hth-MI-LHt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8F6-MI-wfW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5ck-64-XRm" secondAttribute="trailing" id="FK6-VX-Z7X"/>
+                <constraint firstItem="G8s-RZ-7fh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LA0-Da-3Ls"/>
+                <constraint firstItem="G8s-RZ-7fh" firstAttribute="top" secondItem="hth-MI-LHt" secondAttribute="bottom" constant="10" id="MAc-Ca-Wah"/>
+                <constraint firstItem="5ck-64-XRm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OHJ-zc-Kup"/>
+                <constraint firstItem="hth-MI-LHt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="Ocf-50-SUb"/>
+                <constraint firstItem="5ck-64-XRm" firstAttribute="top" secondItem="G8s-RZ-7fh" secondAttribute="bottom" id="OwD-uo-aUP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5ck-64-XRm" secondAttribute="bottom" id="xJI-Vs-Bsl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="147"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="photo-camera" width="93" height="77"/>
+    </resources>
+</document>

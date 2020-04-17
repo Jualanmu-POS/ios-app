@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SoldItemListVC" customModule="Jualanmu" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Q9m-yI-BiN" id="Lgg-3f-mob"/>
+                <outlet property="sortButton" destination="NsP-qs-kRf" id="w3a-O6-JzN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-pC-xwl">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsP-qs-kRf">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="6aL-aL-dNY"/>
+                            </constraints>
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="44" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="290" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Urutkan: Paling banyak" image="chevron.up" catalog="system">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                            </state>
+                            <connections>
+                                <action selector="sortButtonTapped:" destination="-1" eventType="touchUpInside" id="R8L-EN-tys"/>
+                            </connections>
+                        </button>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Q9m-yI-BiN">
+                            <rect key="frame" x="0.0" y="40" width="414" height="778"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="T8l-0e-4X6">
+                                <size key="itemSize" width="0.0" height="0.0"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="16"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Q9m-yI-BiN" secondAttribute="bottom" id="94P-Qb-DPY"/>
+                        <constraint firstItem="Q9m-yI-BiN" firstAttribute="top" secondItem="NsP-qs-kRf" secondAttribute="bottom" id="E2F-VB-kUF"/>
+                        <constraint firstItem="NsP-qs-kRf" firstAttribute="top" secondItem="U2c-pC-xwl" secondAttribute="top" id="O1A-6y-MDs"/>
+                        <constraint firstItem="NsP-qs-kRf" firstAttribute="leading" secondItem="U2c-pC-xwl" secondAttribute="leading" id="XNp-0Y-GPj"/>
+                        <constraint firstAttribute="trailing" secondItem="NsP-qs-kRf" secondAttribute="trailing" id="bgx-1q-jtR"/>
+                        <constraint firstAttribute="trailing" secondItem="Q9m-yI-BiN" secondAttribute="trailing" id="cQE-Uk-imI"/>
+                        <constraint firstItem="Q9m-yI-BiN" firstAttribute="leading" secondItem="U2c-pC-xwl" secondAttribute="leading" id="eUu-5d-lEa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U2c-pC-xwl" secondAttribute="trailing" id="HoK-0Q-fKP"/>
+                <constraint firstItem="U2c-pC-xwl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="J8s-Jb-Xfb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="U2c-pC-xwl" secondAttribute="bottom" id="RNQ-G4-1su"/>
+                <constraint firstItem="U2c-pC-xwl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lGQ-GM-eBX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.up" catalog="system" width="64" height="36"/>
+    </resources>
+</document>

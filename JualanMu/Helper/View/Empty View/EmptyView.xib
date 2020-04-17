@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyView">
+            <connections>
+                <outlet property="actionButton" destination="gfi-96-Kmz" id="gNf-E1-voe"/>
+                <outlet property="imageView" destination="UIN-2V-0ZY" id="F6y-en-Jbz"/>
+                <outlet property="subtitleLabel" destination="rDE-oD-mze" id="Qff-0x-hGg"/>
+                <outlet property="titleLabel" destination="d8W-wt-geD" id="lfN-mD-5vy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ige-WN-uVa" customClass="EmptyView" customModule="Jualanmu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UIN-2V-0ZY">
+                    <rect key="frame" x="32" y="68" width="257" height="280"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fT8-Ld-RhC">
+                    <rect key="frame" x="16" y="364" width="289" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8W-wt-geD">
+                            <rect key="frame" x="0.0" y="0.0" width="289" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDE-oD-mze">
+                            <rect key="frame" x="0.0" y="40" width="289" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfi-96-Kmz" customClass="PaddingLabel" customModule="Jualanmu" customModuleProvider="target">
+                    <rect key="frame" x="139.5" y="444" width="42" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nhT-1c-TyG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fT8-Ld-RhC" firstAttribute="leading" secondItem="UiZ-rN-TEj" secondAttribute="leading" constant="16" id="AdZ-VX-yca"/>
+                <constraint firstItem="UiZ-rN-TEj" firstAttribute="trailing" secondItem="fT8-Ld-RhC" secondAttribute="trailing" constant="16" id="LY3-I5-rxK"/>
+                <constraint firstItem="UiZ-rN-TEj" firstAttribute="bottom" secondItem="gfi-96-Kmz" secondAttribute="bottom" constant="16" id="VjT-U0-e0e"/>
+                <constraint firstItem="UIN-2V-0ZY" firstAttribute="top" secondItem="UiZ-rN-TEj" secondAttribute="top" constant="24" id="YDg-5O-N5r"/>
+                <constraint firstItem="gfi-96-Kmz" firstAttribute="centerX" secondItem="ige-WN-uVa" secondAttribute="centerX" id="psy-uk-KdA"/>
+                <constraint firstItem="UiZ-rN-TEj" firstAttribute="trailing" secondItem="UIN-2V-0ZY" secondAttribute="trailing" constant="32" id="qK8-mx-bwL"/>
+                <constraint firstItem="fT8-Ld-RhC" firstAttribute="top" secondItem="UIN-2V-0ZY" secondAttribute="bottom" constant="16" id="sdc-Qr-uE8"/>
+                <constraint firstItem="UIN-2V-0ZY" firstAttribute="leading" secondItem="UiZ-rN-TEj" secondAttribute="leading" constant="32" id="sqG-XR-am1"/>
+                <constraint firstItem="gfi-96-Kmz" firstAttribute="top" secondItem="fT8-Ld-RhC" secondAttribute="bottom" constant="16" id="tdd-sW-8H6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="UiZ-rN-TEj"/>
+            <point key="canvasLocation" x="-570.28985507246387" y="-75"/>
+        </view>
+    </objects>
+</document>
